@@ -5,8 +5,8 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = 'centos-6.4-x64'
-  config.vm.box_url = 'http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-x86_64-v20131103.box'
+  config.vm.box = 'centos-6.5-x64'
+  config.vm.box_url = 'http://puppet-vagrant-boxes.puppetlabs.com/centos-65-x64-virtualbox-puppet.box'
   # config.vm.box_check_update = false
   config.vm.network "forwarded_port", guest: 1113, host: 1113
   config.vm.network "forwarded_port", guest: 2113, host: 2113
