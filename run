@@ -9,6 +9,9 @@ git clone -b master https://github.com/haf/puppet-supervisor.git modules/supervi
 git clone -b master https://github.com/puppetlabs/puppetlabs-stdlib.git modules/stdlib
 git clone -b master https://github.com/haf/puppet-mono.git modules/mono
 
+vagrant plugin list | grep vagrant-vbguest || {
+  vagrant plugin install vagrant-vbguest
+}
 vagrant up --no-provision
 vagrant ssh -c 'sudo yum update -y'
 vagrant provision
