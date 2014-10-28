@@ -2,10 +2,7 @@
 git clone -b master https://github.com/haf/puppet-eventstore.git modules/eventstore
 git clone -b master  https://github.com/stahnma/puppet-module-epel.git modules/epel
 git clone -b master https://github.com/haf/puppet-supervisor.git modules/supervisor
-(git clone -b master https://github.com/computology/computology-packagecloud.git tmp
- rm -rf ./modules/packagecloud
- cp -r ./tmp/module ./modules/packagecloud
- rm -rf ./tmp)
+git clone -b master https://github.com/computology/computology-packagecloud.git
 git clone -b master https://github.com/puppetlabs/puppetlabs-stdlib.git modules/stdlib
 git clone -b master https://github.com/haf/puppet-mono.git modules/mono
 
